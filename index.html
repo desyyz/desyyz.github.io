@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desmond | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Desmond</h1>
-  <p>IT Application Development Student</p>
+  <header class="hero">
+    <h1>Hi, I’m Desmond</h1>
+    <p>IT Application Development Student</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
 
-  <h2>My Projects</h2>
+  <section id="projects">
+    <h2>Featured Project</h2>
 
-  <div>
-    <h3>Project 1</h3>
-    <p>Description of the website you built.</p>
-    <a href="#" target="_blank">Live Site</a> |
-    <a href="#" target="_blank">GitHub Repo</a>
-  </div>
+    <div class="project-card">
+      <img src="project-screenshot.png" alt="WordPress Website Screenshot">
+      <div class="project-content">
+        <h3>Modern WordPress Website</h3>
+        <p>
+          A modern and responsive website built with WordPress and hosted on Pantheon.
+          I worked on layout, theme customization, and styling to achieve a clean and
+          user-friendly design.
+        </p>
 
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
+        <div class="project-links">
+          <a href="https://your-live-site.com" target="_blank">Live Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact: your-email@example.com</p>
+  </footer>
 
 </body>
 </html>
