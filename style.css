@@ -1,25 +1,26 @@
+/* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  background: #f5f1eb;
+  background: #f6f2ec;
   color: #2f2a25;
   line-height: 1.7;
 }
 
-/* Hero */
+/* HERO */
 .hero {
   min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 900px;
-  margin: auto;
   animation: fadeIn 1.2s ease;
 }
 
@@ -27,29 +28,33 @@ body {
   font-size: 3rem;
 }
 
-.hero p {
+.subtitle {
   margin-top: 1rem;
-  max-width: 600px;
-  color: #5a5148;
+  color: #5f574d;
 }
 
 .btn {
   margin-top: 2rem;
   width: fit-content;
-  padding: 0.75rem 1.5rem;
-  background: #d6c7b2;
+  padding: 0.75rem 1.6rem;
+  background: #d4c6b5;
   color: #2f2a25;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .btn:hover {
   transform: translateY(-4px);
-  background: #cbb79d;
+  background: #c8b59d;
 }
 
-/* Sections */
+.btn.outline {
+  background: transparent;
+  border: 2px solid #d4c6b5;
+}
+
+/* SECTIONS */
 section {
   max-width: 900px;
   margin: auto;
@@ -60,12 +65,12 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* Project card */
+/* PROJECT CARD */
 .project-card {
-  background: #fff;
-  border-radius: 16px;
+  background: #ffffff;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
 
@@ -90,19 +95,33 @@ h2 {
 .project-links a {
   display: inline-block;
   margin-top: 1.5rem;
-  color: #8b6f47;
+  color: #8a6d4c;
   text-decoration: none;
   font-weight: 500;
 }
 
-/* Footer */
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* CONTACT */
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
   color: #6b6258;
 }
 
-/* Animation */
+/* ANIMATION */
 @keyframes fadeIn {
   from {
     opacity: 0;
