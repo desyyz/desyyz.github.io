@@ -8,7 +8,7 @@
 /* BASE */
 body {
   font-family: Inter, system-ui, sans-serif;
-  background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+  background: #1a1a1a;
   color: #eaeaea;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -79,7 +79,7 @@ body::before {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #00d4ff, #a855f7);
+  background: #666;
   transition: width 0.3s ease;
 }
 
@@ -109,7 +109,7 @@ body::before {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #00d4ff, #a855f7);
+  background: #666;
   transition: width 0.3s ease;
 }
 
@@ -165,19 +165,20 @@ body::before {
 .hero .btn {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background: linear-gradient(135deg, #00d4ff, #a855f7);
+  background: #2a2a2a;
   color: #fff;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 5px;
+  border: 1px solid #444;
   transition: all 0.3s ease;
   animation: slideDown 0.8s 0.4s ease forwards;
   opacity: 0;
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
 }
 
 .hero .btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+  background: #333;
+  border-color: #666;
 }
 
 @keyframes slideDown {
@@ -232,8 +233,8 @@ body::before {
 
 .project-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(168, 85, 247, 0.5);
-  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
+  border-color: rgba(102, 102, 102, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .project-image {
@@ -274,14 +275,14 @@ body::before {
 
 .btn-overlay {
   padding: 0.75rem 2rem;
-  background: linear-gradient(135deg, #00d4ff, #a855f7);
+  background: #2a2a2a;
   color: #fff;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 5px;
+  border: 1px solid #666;
   font-weight: 500;
   transform: translateY(20px);
   transition: transform 0.4s ease;
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.5);
 }
 
 .project-card:hover .btn-overlay {
@@ -289,7 +290,8 @@ body::before {
 }
 
 .btn-overlay:hover {
-  box-shadow: 0 6px 25px rgba(168, 85, 247, 0.7);
+  background: #333;
+  border-color: #888;
 }
 
 .project-info {
@@ -311,14 +313,14 @@ body::before {
 .btn-link {
   display: inline-block;
   margin-top: 1rem;
-  color: #a855f7;
+  color: #888;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .btn-link:hover {
-  color: #00d4ff;
+  color: #fff;
   transform: translateX(5px);
 }
 
@@ -372,8 +374,8 @@ body::before {
 
 .skill-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(0, 212, 255, 0.5);
-  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+  border-color: rgba(102, 102, 102, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .skill-card h3 {
@@ -408,13 +410,13 @@ body::before {
 }
 
 .contact-box a {
-  color: #00d4ff;
+  color: #888;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-box a:hover {
-  color: #a855f7;
+  color: #fff;
 }
 
 /* PROJECT DETAIL PAGE */
@@ -447,17 +449,18 @@ body::before {
 .project-description .btn {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background: linear-gradient(135deg, #00d4ff, #a855f7);
+  background: #2a2a2a;
   color: #fff;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 5px;
+  border: 1px solid #666;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
 }
 
 .project-description .btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+  background: #333;
+  border-color: #888;
 }
 
 /* PROJECT GALLERY */
@@ -489,7 +492,7 @@ body::before {
 
 .gallery-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 40px rgba(168, 85, 247, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* ABOUT CONTENT */
@@ -519,16 +522,16 @@ body::before {
 .process-step {
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.1);
-  border-left: 4px solid #a855f7;
+  border-left: 4px solid #666;
   border-radius: 15px;
   padding: 2rem;
   transition: all 0.3s ease;
 }
 
 .process-step:hover {
-  border-left-color: #00d4ff;
+  border-left-color: #888;
   transform: translateX(10px);
-  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .process-step h3 {
