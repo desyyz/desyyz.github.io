@@ -2,47 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Skills| Desmond Poon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills| Desmond Poon</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
+
 <body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Desmond</a>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="extras.html">Process</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="logo">Desmond</a>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="skills.html" class="active">Skills</a></li>
-      <li><a href="extras.html">Process</a></li>
-    </ul>
-  </div>
-</nav>
+  <section class="page fade-in">
+    <h2>Skills</h2>
 
-<section class="page fade-in">
-  <h1>Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>HTML</h3>
+        <p>Building semantic, accessible web structures with modern HTML5 standards.</p>
+      </div>
 
-  <div class="skills-grid reveal">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>PHP</span>
-    <span>MySQL</span>
-    <span>WordPress</span>
-    <span>UI / UX Design</span>
-  </div>
+      <div class="skill-card reveal">
+        <h3>CSS</h3>
+        <p>Creating responsive, visually appealing designs with CSS3 and modern layout techniques.</p>
+      </div>
 
-  <h1 style="margin-top:4rem;">Contact</h1>
+      <div class="skill-card reveal">
+        <h3>JavaScript</h3>
+        <p>Adding interactivity and dynamic functionality to web applications.</p>
+      </div>
 
-  <div class="contact-box reveal">
-    <p>Email: <strong>desmondpoon024@gmail.com</strong></p>
-    <p>Phone: <strong>+65 9843 5735</strong></p>
-  </div>
-</section>
+      <div class="skill-card reveal">
+        <h3>PHP</h3>
+        <p>Server-side programming for dynamic web content and database integration.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>MySQL</h3>
+        <p>Database design and management for data-driven applications.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>WordPress</h3>
+        <p>Custom theme development and content management system expertise.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>UI / UX Design</h3>
+        <p>Creating intuitive user interfaces focused on user experience and accessibility.</p>
+      </div>
+    </div>
+
+    <div class="contact-box reveal" style="margin-top: 4rem;">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:desmondpoon24@gmail.com">desmondpoon24@gmail.com</a></p>
+      <p>Phone: <a href="tel:+6584835755">+65 8483 5755</a></p>
+    </div>
+  </section>
 
 </body>
 </html>
