@@ -18,6 +18,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
 // Mobile menu
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
@@ -27,3 +28,19 @@ if (menuToggle && navLinks) {
     navLinks.classList.toggle("open");
   });
 }
+
+// Navbar scroll effect
+const navbar = document.querySelector(".navbar");
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  
+  if (currentScroll > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+  
+  lastScroll = currentScroll;
+});
