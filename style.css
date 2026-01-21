@@ -54,3 +54,42 @@
     grid-template-columns: 1fr;
   }
 }
+.process-step {
+  margin-top: 3rem;
+  max-width: 600px;
+}
+
+.process-step h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(15,15,18,0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
