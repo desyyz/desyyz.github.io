@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desmond Poon | Portfolio</title>
- <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
-<body>
 
+<body>
   <!-- NAV -->
   <nav class="navbar">
     <div class="nav-container">
@@ -17,7 +17,7 @@
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="extras.html">Process</a></li>
       </ul>
@@ -26,10 +26,43 @@
 
   <!-- HERO -->
   <header class="hero fade-in">
-    <h1>Hi, I’m Desmond</h1>
+    <h1>Hi, I'm Desmond</h1>
     <p>IT Application Development Student | Web Developer</p>
     <a href="projects.html" class="btn">View My Work</a>
   </header>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="page fade-in">
+    <h2>Featured Projects</h2>
+    
+    <div class="projects-grid">
+      <!-- Soul Linen Project -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="images/soul_linen.png" alt="Soul Linen website">
+          <div class="project-overlay">
+            <a href="https://dev-soul-linen.pantheonsite.io/" target="_blank" class="btn-overlay">View Live Site</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Soul Linen - WordPress Website</h3>
+          <p>
+            Soul Linen is a modern WordPress website designed for a lifestyle and 
+            fashion brand. The goal was to create a clean, calming, and 
+            user-friendly interface.
+          </p>
+          <p>
+            I customized themes, structured content, styled layouts, and deployed 
+            the website using Pantheon, simulating a real production environment.
+          </p>
+          <a href="https://dev-soul-linen.pantheonsite.io/" target="_blank" class="btn-link">Visit Site →</a>
+        </div>
+      </div>
+
+      <!-- Add more project cards here following the same pattern -->
+      
+    </div>
+  </section>
 
 </body>
 </html>
