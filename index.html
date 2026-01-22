@@ -5,69 +5,230 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desmond Poon | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
-
 <body>
+
+  <!-- Video Background -->
   <div class="video-background">
-  <video autoplay muted loop playsinline>
-    <source src="videos/background.mp4" type="video/mp4">
-  </video>
-</div>
-  <!-- NAV -->
+    <video autoplay muted loop playsinline>
+      <source src="videos/background.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Settings Button -->
+  <button class="settings-btn" id="settingsBtn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="3"></circle>
+      <path d="M12 1v6m0 6v6m5.2-15.8l-4.2 4.2m0 5.2l-4.2 4.2M23 12h-6m-6 0H1m15.8 5.2l-4.2-4.2m0-5.2l-4.2-4.2"></path>
+    </svg>
+  </button>
+
+  <!-- Settings Menu -->
+  <div class="settings-menu" id="settingsMenu">
+    <div class="settings-header">
+      <h3>Settings</h3>
+      <button class="close-settings" id="closeSettings">×</button>
+    </div>
+    <div class="settings-content">
+      <div class="setting-item">
+        <span>Dark Mode</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkModeToggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">Desmond</a>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="extras.html">Process</a></li>
       </ul>
+      <div class="menu-toggle">☰</div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero fade-in">
-    <h1>Hi, I'm Desmond</h1>
-    <p>IT Application Development Student | Web Developer</p>
-    <a href="projects.html" class="btn">View My Work</a>
-  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="images/profile.png" alt="Desmond Poon" class="profile-photo">
+      <h1>Hi, I'm Desmond</h1>
+      <p>IT Application Development Student | Web Developer</p>
+      <a href="projects.html" class="btn">View My Work</a>
+      <a href="files/Desmond_Poon_Resume.pdf" download class="btn btn-secondary">Download Resume</a>
+    </div>
+  </section>
 
-  <!-- FEATURED PROJECTS -->
-  <section class="page fade-in">
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-card reveal">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number">200+</div>
+        <div class="stat-label">Hours of Coding</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Technologies Mastered</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number">2</div>
+        <div class="stat-label">EMB Awards</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="page">
     <h2>Featured Projects</h2>
     
     <div class="projects-grid">
-      <!-- Soul Linen Project -->
+      
+      <!-- Soul Linen -->
       <div class="project-card reveal">
         <div class="project-image">
-          <img src="images/soul_linen.png" alt="Soul Linen website">
+          <img src="images/soul_linen.png" alt="Soul Linen Website">
           <div class="project-overlay">
             <a href="https://dev-soul-linen.pantheonsite.io/" target="_blank" class="btn-overlay">View Live Site</a>
           </div>
         </div>
         <div class="project-info">
           <h3>Soul Linen - WordPress Website</h3>
-          <p>
-            Soul Linen is a modern WordPress website designed for a lifestyle and 
-            fashion brand. The goal was to create a clean, calming, and 
-            user-friendly interface.
-          </p>
-          <p>
-            I customized themes, structured content, styled layouts, and deployed 
-            the website using Pantheon, simulating a real production environment.
-          </p>
-          <a href="https://dev-soul-linen.pantheonsite.io/" target="_blank" class="btn-link">Visit Site →</a>
+          <p>A modern WordPress e-commerce platform with a soft pink aesthetic for a faith-based clothing brand.</p>
+          <a href="projects.html#soullinen-detail" class="btn-link">Learn More →</a>
         </div>
       </div>
 
-      <!-- Add more project cards here following the same pattern -->
+      <!-- Grace By Faith -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="images/gracebyfaith.png" alt="Grace By Faith Website">
+          <div class="project-overlay">
+            <a href="https://desyyz.github.io/faithbygraceweb/" target="_blank" class="btn-overlay">View Live Site</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Grace By Faith - E-Commerce</h3>
+          <p>An elegant e-commerce website with warm beige tones for faith-inspired fashion.</p>
+          <a href="projects.html#gracebyfaith-detail" class="btn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Nikki Plumbing -->
+      <div class="project-card reveal wip-project">
+        <div class="wip-badge-overlay">In Development</div>
+        <div class="project-image">
+          <img src="images/nikki_plumbing.png" alt="Nikki Electrical Plumbing Services">
+          <div class="project-overlay">
+            <a href="https://nikki-electrical-plumbing-services-7c858803.base44.app/" target="_blank" class="btn-overlay">View Demo</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Nikki Plumbing Services</h3>
+          <p>A professional service website for plumbing and electrical business (WIP).</p>
+          <a href="projects.html#nikki-detail" class="btn-link">Learn More →</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="projects.html" class="btn">View All Projects</a>
+    </div>
+  </section>
+
+  <!-- Skills Progress Section -->
+  <section class="page">
+    <h2>Technical Skills</h2>
+    
+    <div class="skills-progress-container">
+      
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">HTML & CSS</span>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 90%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 80%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">WordPress</span>
+          <span class="skill-percentage">85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">PHP</span>
+          <span class="skill-percentage">75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 75%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">Python</span>
+          <span class="skill-percentage">70%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">Adobe XD & Photoshop</span>
+          <span class="skill-percentage">75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 75%"></div>
+        </div>
+      </div>
       
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section class="page">
+    <h2>Get In Touch</h2>
+    
+    <div class="contact-box fade-in">
+      <h3>Let's Work Together</h3>
+      <p>Interested in collaborating on a project or just want to say hi?</p>
+      <p><strong>Email:</strong> <a href="mailto:desmondpoon24@gmail.com">desmondpoon24@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+6598435735">+65 9843 5735</a></p>
+      <p><strong>Portfolio:</strong> <a href="https://desyyz.github.io" target="_blank">desyyz.github.io</a></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
