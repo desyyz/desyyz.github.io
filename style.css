@@ -401,6 +401,42 @@ body.light-mode .navbar {
   border-color: var(--accent-color);
 }
 
+/* Profile Section for About Page */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.profile-photo-large {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--border-color);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-photo-large:hover {
+  transform: scale(1.05) rotate(2deg);
+  border-color: var(--accent-color);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-actions .btn {
+  display: inline-flex;
+  align-items: center;
+}
+
 .hero h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 0.5rem;
@@ -716,6 +752,3 @@ body.light-mode .navbar {
 .reveal:nth-child(2).show { transition-delay: 0.2s; }
 .reveal:nth-child(3).show { transition-delay: 0.3s; }
 .reveal:nth-child(4).show { transition-delay: 0.4s; }
-
-/* Continue with all other existing styles from your current CSS... */
-/* (Include all the remaining CSS from the previous artifact) */
