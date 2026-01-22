@@ -3,21 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills| Desmond Poon</title>
+  <title>Skills | Desmond Poon</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
-
 <body>
+
+  <!-- Video Background -->
   <div class="video-background">
-  <video autoplay muted loop playsinline>
-    <source src="videos/background.mp4" type="video/mp4">
-  </video>
-</div>
+    <video autoplay muted loop playsinline>
+      <source src="videos/background.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Settings Button -->
+  <button class="settings-btn" id="settingsBtn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="3"></circle>
+      <path d="M12 1v6m0 6v6m5.2-15.8l-4.2 4.2m0 5.2l-4.2 4.2M23 12h-6m-6 0H1m15.8 5.2l-4.2-4.2m0-5.2l-4.2-4.2"></path>
+    </svg>
+  </button>
+
+  <!-- Settings Menu -->
+  <div class="settings-menu" id="settingsMenu">
+    <div class="settings-header">
+      <h3>Settings</h3>
+      <button class="close-settings" id="closeSettings">×</button>
+    </div>
+    <div class="settings-content">
+      <div class="setting-item">
+        <span>Dark Mode</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkModeToggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">Desmond</a>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -25,13 +51,110 @@
         <li><a href="skills.html" class="active">Skills</a></li>
         <li><a href="extras.html">Process</a></li>
       </ul>
+      <div class="menu-toggle">☰</div>
     </div>
   </nav>
 
+  <!-- Skills Page -->
   <section class="page fade-in">
     <h2>Skills</h2>
 
+    <!-- Skill Progress Bars Section -->
+    <div class="section-header">
+      <h3 class="section-title">Technical Proficiency</h3>
+    </div>
+
+    <div class="skills-progress-container">
+      
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">HTML & CSS</span>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 90%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 80%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">WordPress</span>
+          <span class="skill-percentage">85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">PHP</span>
+          <span class="skill-percentage">75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 75%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">Python</span>
+          <span class="skill-percentage">70%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">MySQL</span>
+          <span class="skill-percentage">70%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">Adobe XD & Photoshop</span>
+          <span class="skill-percentage">75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 75%"></div>
+        </div>
+      </div>
+
+      <div class="skill-progress reveal">
+        <div class="skill-info">
+          <span class="skill-name">XAMPP & Local Development</span>
+          <span class="skill-percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 80%"></div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Original Skill Cards -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3 class="section-title">Core Competencies</h3>
+    </div>
+
     <div class="skills-grid">
+      
       <div class="skill-card reveal">
         <h3>HTML</h3>
         <p>Building semantic, accessible web structures with modern HTML5 standards.</p>
@@ -66,14 +189,56 @@
         <h3>UI / UX Design</h3>
         <p>Creating intuitive user interfaces focused on user experience and accessibility.</p>
       </div>
+
+      <div class="skill-card reveal">
+        <h3>Version Control (Git)</h3>
+        <p>Managing code repositories and collaborating on projects using Git and GitHub.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Responsive Design</h3>
+        <p>Ensuring websites work seamlessly across all devices and screen sizes.</p>
+      </div>
+
     </div>
 
-    <div class="contact-box reveal" style="margin-top: 4rem;">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:desmondpoon24@gmail.com">desmondpoon24@gmail.com</a></p>
-      <p>Phone: <a href="tel:+6584835755">+65 8483 5755</a></p>
+    <!-- Soft Skills Section -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3 class="section-title">Professional Skills</h3>
     </div>
-  </section>
 
+    <div class="skills-grid">
+      
+      <div class="skill-card reveal">
+        <h3>Team Collaboration</h3>
+        <p>Working effectively with diverse teams to achieve common goals and deliver quality results.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Communication Skills</h3>
+        <p>Clear and professional communication with clients, team members, and stakeholders.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Project Management</h3>
+        <p>Basic project coordination and time management to meet deadlines and deliverables.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Problem Solving</h3>
+        <p>Analytical thinking and creative approaches to overcome technical challenges.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Continuous Learning</h3>
+        <p>Staying updated with latest web technologies and industry best practices.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Attention to Detail</h3>
+        <p>Ensuring pixel-perfect designs and bug-free code through careful review and testing.</p>
+      </div>
+      
+  <script src="script.js"></script>
 </body>
 </html>
