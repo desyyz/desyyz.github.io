@@ -3,21 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Desmond</title>
+  <title>About | Desmond Poon</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
-
 <body>
+
+  <!-- Video Background -->
   <div class="video-background">
-  <video autoplay muted loop playsinline>
-    <source src="videos/background.mp4" type="video/mp4">
-  </video>
-</div>
+    <video autoplay muted loop playsinline>
+      <source src="videos/background.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Settings Button -->
+  <button class="settings-btn" id="settingsBtn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="3"></circle>
+      <path d="M12 1v6m0 6v6m5.2-15.8l-4.2 4.2m0 5.2l-4.2 4.2M23 12h-6m-6 0H1m15.8 5.2l-4.2-4.2m0-5.2l-4.2-4.2"></path>
+    </svg>
+  </button>
+
+  <!-- Settings Menu -->
+  <div class="settings-menu" id="settingsMenu">
+    <div class="settings-header">
+      <h3>Settings</h3>
+      <button class="close-settings" id="closeSettings">×</button>
+    </div>
+    <div class="settings-content">
+      <div class="setting-item">
+        <span>Dark Mode</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkModeToggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">Desmond</a>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
@@ -25,26 +51,180 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="extras.html">Process</a></li>
       </ul>
+      <div class="menu-toggle">☰</div>
     </div>
   </nav>
 
+  <!-- About Page -->
   <section class="page fade-in">
     <h2>About Me</h2>
     
-    <div class="about-content reveal">
-      <p>
-        I am an IT Application Development student with a strong interest in
-        web development and application design. I enjoy building modern,
-        user-friendly websites using real-world tools.
-      </p>
-      
-      <p>
-        I have experience working with WordPress, HTML, CSS, and deployment
-        platforms such as Pantheon. I focus on writing clean, readable code
-        and continuously improving my technical skills.
-      </p>
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <img src="images/profile.png" alt="Desmond Poon" class="profile-photo-large">
+      <div class="profile-actions">
+        <a href="Desmond_Poon_Resume.pdf" download class="btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px; vertical-align: middle;">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume
+        </a>
+      </div>
     </div>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+      <div class="stats-container">
+        <div class="stat-card reveal">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Hours of Coding</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Technologies Mastered</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">2</div>
+          <div class="stat-label">EMB Awards</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="about-content">
+      <p>I am an IT Application Development student with a strong interest in web development and application design. I enjoy building modern, user-friendly websites using real-world tools.</p>
+      
+      <p>I have experience working with WordPress, HTML, CSS, and deployment platforms such as Pantheon. I focus on writing clean, readable code and continuously improving my technical skills.</p>
+    </div>
+
+    <!-- My Journey Section -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3 class="section-title">My Journey</h3>
+    </div>
+
+    <div class="about-content">
+      <p>My journey into web development started with a curiosity about how websites work. What began as simple HTML pages has evolved into building full-stack applications and e-commerce platforms. Each project teaches me something new and pushes me to grow as a developer.</p>
+      
+      <p>I'm passionate about creating digital experiences that are not only functional but also meaningful. Whether it's a faith-based e-commerce site or a professional service website, I believe every project deserves attention to detail and thoughtful design.</p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3 class="section-title">Education</h3>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <h3>IT Application Development at ITE Central</h3>
+        <p>2025 - 2027</p>
+        <p>Studying modern web technologies, programming languages, and application development. Building hands-on experience with real-world projects.</p>
+      </div>
+
+      <div class="process-step reveal">
+        <h3>Serangoon Gardens Secondary School</h3>
+        <p>2020 - 2024 | GCE 'N' Level</p>
+        <p>Completed secondary education with focus on academic excellence. Received 2 EMB Awards (Bursary) for being in the top 25% of academic performance with good conduct.</p>
+      </div>
+    </div>
+
+    <!-- What I Do Section -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3 class="section-title">What I Do</h3>
+    </div>
+
+    <div class="skills-grid">
+      
+      <div class="skill-card reveal">
+        <h3>🎨 Web Design</h3>
+        <p>Creating clean, modern interfaces that prioritize user experience and accessibility. I focus on responsive design that looks great on any device.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>💻 Web Development</h3>
+        <p>Building functional websites and applications using HTML, CSS, JavaScript, and modern frameworks. I write maintainable code that follows best practices.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>🛒 E-Commerce Solutions</h3>
+        <p>Developing online stores with WordPress and custom platforms. I create seamless shopping experiences that convert visitors into customers.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>🚀 Deployment & Hosting</h3>
+        <p>Managing website deployment on platforms like Pantheon, GitHub Pages, and traditional hosting. I ensure sites are fast, secure, and reliable.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>🔧 Problem Solving</h3>
+        <p>Debugging issues, optimizing performance, and finding creative solutions to technical challenges. I enjoy tackling complex problems.</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>📱 Responsive Design</h3>
+        <p>Ensuring websites work flawlessly across all devices and screen sizes. Mobile-first approach with attention to touch interactions.</p>
+      </div>
+      
+    </div>
+
+    <!-- Technologies Section -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3 class="section-title">Technologies I Work With</h3>
+    </div>
+
+    <div class="about-content">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        
+        <div style="text-align: center;">
+          <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Frontend</h4>
+          <p style="color: var(--text-tertiary);">HTML5, CSS3, JavaScript, React, Tailwind CSS, Bootstrap</p>
+        </div>
+
+        <div style="text-align: center;">
+          <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Backend</h4>
+          <p style="color: var(--text-tertiary);">Node.js, PHP, Python, MySQL, REST APIs</p>
+        </div>
+
+        <div style="text-align: center;">
+          <h4 style="color: var(--text-primary); margin-bottom: 1rem;">CMS & Platforms</h4>
+          <p style="color: var(--text-tertiary);">WordPress, Pantheon, GitHub Pages, XAMPP</p>
+        </div>
+
+        <div style="text-align: center;">
+          <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Design Tools</h4>
+          <p style="color: var(--text-tertiary);">Adobe XD, Illustrator, Photoshop, Figma</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Beyond Code Section -->
+    <div class="section-header" style="margin-top: 4rem;">
+      <h3 class="section-title">Beyond Code</h3>
+    </div>
+
+    <div class="about-content">
+      <p>When I'm not coding, I enjoy exploring design trends, contributing to open-source projects, and working on passion projects that combine technology with purpose. I'm particularly interested in creating digital solutions for faith-based organizations and small businesses.</p>
+      
+      <p>I believe in using technology to make a positive impact, whether that's helping a local business establish their online presence or building platforms that bring communities together.</p>
+    </div>
+
+    <!-- Contact Box -->
+    <div class="contact-box">
+      <h3>Let's Connect</h3>
+      <p>Interested in working together or just want to say hi?</p>
+      <p><strong>Email:</strong> <a href="mailto:desmondpoon24@gmail.com">desmondpoon24@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+6598435735">+65 9843 5735</a></p>
+      <p><strong>Portfolio:</strong> <a href="https://desyyz.github.io" target="_blank">desyyz.github.io</a></p>
+    </div>
+
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
