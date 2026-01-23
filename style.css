@@ -1,11 +1,11 @@
-/* RESET */
+/* restart */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
+/* base */
 body {
   font-family: Inter, system-ui, sans-serif;
   background: #1a1a1a;
@@ -24,7 +24,7 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* Loading animation */
+/* Loading thing */
 body::before {
   content: '';
   position: fixed;
@@ -45,7 +45,7 @@ body::before {
   }
 }
 
-/* Video Background */
+/*Background */
 .video-background {
   position: fixed;
   top: 0;
@@ -82,7 +82,7 @@ body::before {
   z-index: 1;
 }
 
-/* NAV */
+/*navigation bar*/
 .navbar {
   position: sticky;
   top: 0;
@@ -181,7 +181,7 @@ body::before {
   color: #fff;
 }
 
-/* HERO */
+/*hero stuff*/
 .hero {
   max-width: 1100px;
   margin: 6rem auto;
@@ -195,7 +195,7 @@ body::before {
   align-items: center;
   gap: 1.5rem;
 }
-
+/*do tmr*/
 .hero h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 1rem;
@@ -235,7 +235,7 @@ body::before {
   background: #333;
   border-color: #666;
 }
-
+/*0.75 or 1 for padding, 5px or 10px is good, 1px for border*/
 .btn {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -246,7 +246,7 @@ body::before {
   border: 1px solid #444;
   transition: all 0.3s ease;
 }
-
+/*keep -2*/
 .btn:hover {
   transform: translateY(-2px);
   background: #333;
@@ -260,7 +260,7 @@ body::before {
 .btn-secondary:hover {
   background: #666 !important;
 }
-
+/*usually put -30 or -40*/
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -272,7 +272,7 @@ body::before {
   }
 }
 
-/* Profile Photo */
+/*profile , need to figure out*/
 .profile-section {
   display: flex;
   flex-direction: column;
@@ -454,7 +454,7 @@ body::before {
   gap: 3rem;
   margin-top: 3rem;
 }
-
+/*do tmr*/
 .project-card {
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.1);
@@ -769,7 +769,7 @@ body::before {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* SKILLS GRID */
+/*skill grding */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -935,7 +935,7 @@ body::before {
     visibility: hidden;
     transition: all 0.3s ease;
   }
-
+/*do tmr*/
   .nav-links.open {
     transform: translateY(0);
     opacity: 1;
@@ -1002,7 +1002,7 @@ body::before {
   }
 }
 
-/* Desktop larger iframe */
+/* Desktop big iframe */
 @media (min-width: 1024px) {
   .iframe-container {
     padding-bottom: 60%;
