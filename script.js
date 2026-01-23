@@ -1,59 +1,12 @@
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-const settingsBtn = document.getElementById('settingsBtn');
-const settingsMenu = document.getElementById('settingsMenu');
-const closeSettings = document.getElementById('closeSettings');
 
-// Check for saved theme preference or default to dark mode
-const currentTheme = localStorage.getItem('theme') || 'dark';
-if (currentTheme === 'light') {
-  document.body.classList.add('light-mode');
-  if (darkModeToggle) darkModeToggle.checked = false;
-}
-
-// Toggle dark mode
-if (darkModeToggle) {
-  darkModeToggle.addEventListener('change', function() {
-    if (this.checked) {
-      document.body.classList.remove('light-mode');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.body.classList.add('light-mode');
-      localStorage.setItem('theme', 'light');
-    }
-  });
-}
-
-// Settings menu toggle
-if (settingsBtn) {
-  settingsBtn.addEventListener('click', function() {
-    settingsMenu.classList.toggle('active');
-  });
-}
-
-if (closeSettings) {
-  closeSettings.addEventListener('click', function() {
-    settingsMenu.classList.remove('active');
-  });
-}
-
-// Close settings menu when clicking outside
-document.addEventListener('click', function(event) {
-  if (settingsMenu && settingsBtn) {
-    if (!settingsMenu.contains(event.target) && !settingsBtn.contains(event.target)) {
-      settingsMenu.classList.remove('active');
-    }
-  }
-});
-
-// Fade-in on load
+// Fade-in when load
 window.addEventListener('load', () => {
   document.querySelectorAll('.fade-in').forEach(el => {
     el.classList.add('show');
   });
 });
 
-// Scroll reveal
+// Scrollingg reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -66,7 +19,7 @@ document.querySelectorAll('.reveal').forEach((el) => {
   observer.observe(el);
 });
 
-// Navbar scroll effect
+// Navbar scroll stuff
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
